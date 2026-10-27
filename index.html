@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cercador de pel·lícules de TMDB.">
     <title>Primera Pàgina</title>
 </head>
 <body>
 <header>
     <a href="https://www.themoviedb.org/?language=es" target="_blank">
-        <img src="https://www.themoviedb.org/assets/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="Foto Logo tmdb" style="width:138px;height:138px;">
+        <img src="https://www.themoviedb.org/assets/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="Foto Logo tmdb" style="width:200px;height:200px;">
     </a>
     <nav>
     <ul>
@@ -16,7 +17,7 @@
             <li>Buscador</li>
         </a>
 
-        <a href="">
+        <a href="contacte.html">
             <li>Contacte</li> 
         </a>  
     </ul>
@@ -26,13 +27,14 @@
 
     <main>
     <section>
-        <h1>BUSCAR una pel·lícula</h1>
-        <p>Millons de títols, un sol cercador.</p>
-        <div>
-            <input type="text" name="" id=""> 
+    <h1>BUSCAR una pel·lícula</h1>
+    <p>Milions de títols, un sol cercador.</p>
+    <form method="get" action="https://www.themoviedb.org/search">
+        <label for="cerca-input">Cercar:</label>
+        <input type="search" name="query" id="cerca-input" placeholder="Escriu una pel·lícula..." required>
         <button type="submit">Cercar</button>
-        </div>
-    </section>
+    </form>
+</section>
     
     
     <section>
